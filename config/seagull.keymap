@@ -204,22 +204,22 @@
         layer_4 {
             display-name = "Numpad";
             bindings = <
-                       &mo 2      &mo 1
-                                  &kp LALT
+                          &mo 2      &mo 1
+                                     &kp LALT
 
-&kp Y                             &mo 3
-&kp Z                             &mo 4
-            &kp LC(C)  &kp LC(V)
-&kp LG(N1)                        &kp LALT
-&kp W                             &kp N4
+&kp Y                                &mo 3
+&kp Z                                &mo 4
+            &kp LC(C)     &kp LC(V)
+&kp LG(N1)                           &kp LALT
+&kp W                                &kp N4
 
-            &kp UP
-&kp LEFT    &kp RET    &kp RIGHT
-            &kp DOWN
+            &sz0
+&sy0        &kp RET       &sx0
+            &taskmanager
 
-                       &kp S
-&kp N7      &kp TAB               &kp ESC   &kp N9
-                       &kp L
+                          &kp S
+&kp N7      &kp TAB                  &kp ESC   &kp N9
+                          &kp L
             >;
 
             sensor-bindings = <&inc_dec_kp LC(Y) LC(Z)>;
