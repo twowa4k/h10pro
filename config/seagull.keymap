@@ -100,8 +100,8 @@
                        &mo 2      &mo 1
                                   &kp LALT
 
-&kp Y                             &mo 1
-&kp Z                             &mo 3
+&kp Y                             &mo 3
+&kp Z                             &mo 4
             &kp LC(C)  &kp LC(V)
 &kp LG(N1)                        &kp LALT
 &kp W                             &kp N4
@@ -179,22 +179,43 @@
 
         layer_3 {
             bindings = <
-                    &trans    &trans
-                              &trans
+                   &trans    &trans
+                             &trans
 
-&trans                        &trans
-&trans                        &trans
-           &trans   &trans
-&trans                        &trans
-&trans                        &trans
+&trans                       &trans
+&trans                       &trans
+          &trans   &trans
+&trans                       &trans
+&trans                       &trans
 
-           &kp T
-&kp L      &kp C    &kp R
-           &kp U
+          &kp T
+&kp L     &kp F3   &kp R
+          &kp U
 
-                    &kp DOWN
-&kp MINUS  &kp DOT            &kp COMMA  &kp EQUAL
-                    &trans
+                   &kp DOWN
+&kp EXCL  &kp DQT            &kp DLLR  &kp PRCNT
+                   &kp AMPS
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+                &trans  &trans
+                        &trans
+
+&trans                  &trans
+&trans                  &trans
+        &trans  &trans
+&trans                  &trans
+&trans                  &trans
+
+        &kp W
+&kp A   &kp F4  &kp D
+        &kp S
+
+                &trans
+&trans  &trans          &trans  &trans
+                &trans
             >;
         };
     };
