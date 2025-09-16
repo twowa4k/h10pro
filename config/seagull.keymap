@@ -101,7 +101,7 @@
                                   &kp LALT
 
 &kp Y                             &mo 3
-&kp Z                             &mo 4
+&kp Z                             &mo 0
             &kp LC(C)  &kp LC(V)
 &kp LG(N1)                        &kp LALT
 &kp W                             &kp N4
@@ -132,8 +132,8 @@
             // +------+------+------+------+     
 
             bindings = <
-                             &kp LALT           &kp LALT
-                                                &kp N3
+                             &kp A              &kp B
+                                                &kp LALT
 
 &sy0                                            &sx0
 &sz0                                            &kp LC(B)
@@ -157,7 +157,7 @@
             display-name = "Numpad";
             bindings = <
                                   &kp N4           &kp N5
-                                                   &kp N6
+                                                   &kp LALT
 
 &sy0                                               &kp LGUI
 &sz0                                               &kp LA(B)
@@ -179,44 +179,47 @@
 
         layer_3 {
             bindings = <
-                   &trans    &trans
-                             &trans
+                 &trans    &trans
+                           &kp LALT
 
-&trans                       &trans
-&trans                       &trans
-          &trans   &trans
-&trans                       &trans
-&trans                       &trans
+&trans                     &trans
+&trans                     &trans
+        &trans   &trans
+&trans                     &trans
+&trans                     &trans
 
-          &kp T
-&kp L     &kp F3   &kp R
-          &kp U
+        &kp T
+&kp L   &kp F3   &kp R
+        &kp U
 
-                   &kp DOWN
-&kp EXCL  &kp DQT            &kp DLLR  &kp PRCNT
-                   &kp AMPS
+                 &kp DOWN
+&kp O   &kp DQT            &kp DLLR  &kp P
+                 &kp G
             >;
         };
 
         layer_4 {
+            display-name = "Numpad";
             bindings = <
-                &trans  &trans
-                        &trans
+                                  &kp N4           &kp N5
+                                                   &kp LALT
 
-&trans                  &trans
-&trans                  &trans
-        &trans  &trans
-&trans                  &trans
-&trans                  &trans
+&sy0                                               &kp LGUI
+&sz0                                               &kp LA(B)
+                 &kp LS(L)        &kp LS(R)
+&kp KP_DIVIDE                                      &kp LALT
+&kp LALT                                           &kp KP_N3
 
-        &kp W
-&kp A   &kp F4  &kp D
-        &kp S
+                 &kp KP_NUMBER_7
+&kp KP_NUMBER_1  &kp KP_DOT       &kp KP_NUMBER_9
+                 &kp KP_NUMBER_3
 
-                &trans
-&trans  &trans          &trans  &trans
-                &trans
+                                  &kp LS(LC(T))
+&kp G            &kp LS(LC(L))                     &kp LS(LC(R))  &kp H
+                                  &kp LS(LC(B))
             >;
+
+            sensor-bindings = <&inc_dec_kp LC(TAB) LC(LS(TAB))>;
         };
     };
 };
