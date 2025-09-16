@@ -101,7 +101,7 @@
                                   &kp LALT
 
 &kp Y                             &mo 3
-&kp Z                             &mo 0
+&kp Z                             &mo 4
             &kp LC(C)  &kp LC(V)
 &kp LG(N1)                        &kp LALT
 &kp W                             &kp N4
@@ -132,7 +132,7 @@
             // +------+------+------+------+     
 
             bindings = <
-                             &kp A              &kp B
+                             &mo 2              &mo 1
                                                 &kp LALT
 
 &sy0                                            &sx0
@@ -156,7 +156,7 @@
         layer_2 {
             display-name = "Numpad";
             bindings = <
-                                  &kp N4           &kp N5
+                                  &mo 2            &mo 1
                                                    &kp LALT
 
 &sy0                                               &kp LGUI
@@ -179,7 +179,7 @@
 
         layer_3 {
             bindings = <
-                 &trans    &trans
+                 &mo 2     &mo 1
                            &kp LALT
 
 &trans                     &trans
@@ -201,7 +201,7 @@
         layer_4 {
             display-name = "Numpad";
             bindings = <
-                                  &kp N4           &kp N5
+                                  &mo 2            &mo 1
                                                    &kp LALT
 
 &sy0                                               &kp LGUI
