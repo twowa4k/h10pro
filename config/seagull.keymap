@@ -178,27 +178,6 @@
         };
 
         layer_3 {
-            bindings = <
-                 &mo 2     &mo 1
-                           &kp LALT
-
-&trans                     &trans
-&trans                     &trans
-        &trans   &trans
-&trans                     &trans
-&trans                     &trans
-
-        &kp T
-&kp L   &kp F3   &kp R
-        &kp U
-
-                 &kp DOWN
-&kp O   &kp DQT            &kp DLLR  &kp P
-                 &kp G
-            >;
-        };
-
-        layer_4 {
             display-name = "Numpad";
             bindings = <
                                   &mo 2            &mo 1
@@ -215,11 +194,35 @@
                  &kp KP_NUMBER_3
 
                                   &kp LS(LC(T))
-&kp G            &kp LS(LC(L))                     &kp LS(LC(R))  &kp H
+&kp N5           &kp LS(LC(L))                     &kp LS(LC(R))  &kp N8
                                   &kp LS(LC(B))
             >;
 
             sensor-bindings = <&inc_dec_kp LC(TAB) LC(LS(TAB))>;
+        };
+
+        layer_4 {
+            display-name = "Numpad";
+            bindings = <
+                       &mo 2      &mo 1
+                                  &kp LALT
+
+&kp Y                             &mo 3
+&kp Z                             &mo 4
+            &kp LC(C)  &kp LC(V)
+&kp LG(N1)                        &kp LALT
+&kp W                             &kp N4
+
+            &kp UP
+&kp LEFT    &kp RET    &kp RIGHT
+            &kp DOWN
+
+                       &kp S
+&kp N7      &kp TAB               &kp ESC   &kp N9
+                       &kp L
+            >;
+
+            sensor-bindings = <&inc_dec_kp LC(Y) LC(Z)>;
         };
     };
 };
