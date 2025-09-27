@@ -177,7 +177,7 @@
 &kp N4           &kp LS(LC(L))                     &kp LS(LC(R))  &kp N7
                                   &kp LS(LC(B))
 
-&kp L                             &kp M                           &kp R
+&kp LS(L)                         &kp LS(M)                       &kp LS(R)
             >;
 
             sensor-bindings = <&inc_dec_kp LC(TAB) LC(LS(TAB))>;
@@ -203,7 +203,7 @@
 &kp N5           &kp LS(LC(L))                     &kp LS(LC(R))  &kp N8
                                   &kp LS(LC(B))
 
-&kp L                             &kp M                           &kp R
+&kp LS(LC(L))                     &kp LS(LC(M))                   &kp LS(LC(R))
             >;
 
             sensor-bindings = <&inc_dec_kp LC(TAB) LC(LS(TAB))>;
@@ -229,7 +229,7 @@
 &kp N7      &kp TAB                  &kp ESC   &kp N9
                           &kp L
 
-&kp L                     &kp M                &kp R
+&kp LA(L)                 &kp LA(M)            &kp LA(R)
             >;
 
             sensor-bindings = <&inc_dec_kp LC(Y) LC(Z)>;
