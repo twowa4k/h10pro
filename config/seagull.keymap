@@ -228,8 +228,9 @@
                           &kp S
 &kp N7      &kp TAB                  &kp ESC   &kp N9
                           &kp L
-
-                                   &kp M
+ 
+                  &kp L  &kp M   &kp R
+                               
             >;
 
             sensor-bindings = <&inc_dec_kp LC(Y) LC(Z)>;
