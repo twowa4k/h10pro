@@ -151,7 +151,7 @@
 &kp B     &kp LS(LC(LA(L)))                     &kp LS(LC(LA(R)))  &kp E
                              &kp LS(LC(LA(B)))
 
-&kp L                        &kp N5                                &kp R
+&kp L                        &kp HOME                              &kp R
             >;
 
             sensor-bindings = <&inc_dec_kp LC(C_VOLUME_UP) LC(C_VOLUME_DOWN)>;
@@ -177,7 +177,7 @@
 &kp N4           &kp LS(LC(L))                     &kp LS(LC(R))  &kp N7
                                   &kp LS(LC(B))
 
-&kp LS(L)                         &kp LS(M)                       &kp LS(R)
+&kp LS(L)                         &kp PG_UP                       &kp LS(R)
             >;
 
             sensor-bindings = <&inc_dec_kp LC(TAB) LC(LS(TAB))>;
@@ -203,7 +203,7 @@
 &kp N5           &kp LS(LC(L))                     &kp LS(LC(R))  &kp N8
                                   &kp LS(LC(B))
 
-&kp LS(LC(L))                     &kp LS(LC(M))                   &kp LS(LC(R))
+&kp LS(LC(L))                     &kp PG_DN                       &kp LS(LC(R))
             >;
 
             sensor-bindings = <&inc_dec_kp LC(TAB) LC(LS(TAB))>;
@@ -229,7 +229,7 @@
 &kp N7      &kp TAB                  &kp ESC   &kp N9
                           &kp L
 
-&kp LA(L)                 &kp LA(M)            &kp LA(R)
+&kp LA(L)                 &kp END              &kp LA(R)
             >;
 
             sensor-bindings = <&inc_dec_kp LC(Y) LC(Z)>;
