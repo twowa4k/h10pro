@@ -151,7 +151,7 @@
 &kp B     &kp LS(LC(LA(L)))                     &kp LS(LC(LA(R)))  &kp E
                              &kp LS(LC(LA(B)))
 
-&kp L                        &kp M                                 &kp R
+&kp L                        &kp N5                                &kp R
             >;
 
             sensor-bindings = <&inc_dec_kp LC(C_VOLUME_UP) LC(C_VOLUME_DOWN)>;
