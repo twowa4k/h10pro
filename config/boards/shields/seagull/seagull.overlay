@@ -62,7 +62,7 @@
                       <&gpio0 23 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>, /* fin b 0.23 v */
 
                         <&gpio1 15 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>, /* L copy gwl 1.15 */
-                      <&gpio1 31 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>, /* M glb  1.1 m l r  v */
+                      <&gpio0 31 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>, /* M glb  1.1 m 0.31 l r  v */
 			            <&gpio1 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> /* R paste gwr 1.10 */
 
 
