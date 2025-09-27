@@ -36,13 +36,13 @@
                         <&gpio1 11 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>, /* grb 1.11 */
 
                         <&gpio1 15 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>, /* copy gwl 1.15 */
-			<&gpio1 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>, /* paste gwr 1.10 */
+			            <&gpio1 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>, /* paste gwr 1.10 */
 
                         <&gpio0 12 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>, /* n3 0.12*/
-			 <&gpio1 8 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>, /* n4 1.8 */
+			            <&gpio1 8 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>, /* n4 1.8 */
                  
                          <&gpio0 19 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>, /* gr2 0.19 rabotaet kak L m3bot no ona ne podklu4ena po scheme 0.9 - ne rab F */
-<&gpio0 3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>, /* war 0 3 sr 0.3 */
+                         <&gpio0 3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>, /* war 0 3 sr 0.3 */
 
   
 
@@ -60,6 +60,8 @@
                       <&gpio1 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>, /* fin GTL 1.6 naoborot F */
 		      <&gpio0 22 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>, /* Top paste fin 0.22  v6 */
                       <&gpio0 23 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> /* fin b 0.23 v */
+
+                  <&gpio1 15 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> /* middle layer1 b 0.23 v */
 
 
 
