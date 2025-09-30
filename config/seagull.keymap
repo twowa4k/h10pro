@@ -111,7 +111,7 @@
             &kp DOWN
 
                        &kp S
-&kp K       &kp LALT              &kp ESC   &kp L
+&kp LA(K)   &kp LALT              &kp ESC   &kp LA(L)
                        &kp LALT
 
 &none                  &none                &none
