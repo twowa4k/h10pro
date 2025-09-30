@@ -93,14 +93,6 @@
  };
 
 
-    battery: battery {
-        compatible = "zmk,battery";
-        adc-channel = <NRF_SAADC_INPUT_A0>;
-        vref-mv = <3000>;
-        full-mv = <4200>;
-        critical-mv = <3300>;
-        scale = <290>; /* VDIV 0.29 */
-    };
 
  sensors: sensors {
 		compatible = "zmk,keymap-sensors";
