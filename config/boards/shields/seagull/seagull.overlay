@@ -1,5 +1,4 @@
 /*
-
  * Copyright (c) 2022 The ZMK Contributors
  *
  * SPDX-License-Identifier: MIT
@@ -18,34 +17,35 @@
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-direct";
         label = "KSCAN";
-        input-gpios =
-            <&gpio0 9  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
-            <&gpio0 11 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
-            <&gpio0 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
-            <&gpio1 13 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
-            <&gpio0 30 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
-            <&gpio0 41 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
-            <&gpio1 11 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
-            <&gpio1 45 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
-            <&gpio1 40 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
-            <&gpio0 12 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
-            <&gpio1 8  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
-            <&gpio0 19 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
-            <&gpio0 3  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
-            <&gpio1 3  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
-            <&gpio1 9  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
-            <&gpio0 17 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
-            <&gpio0 5  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
-            <&gpio1 1  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
-            <&gpio1 0  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
-            <&gpio0 21 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
-            <&gpio1 5  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
-            <&gpio1 6  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
-            <&gpio0 22 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
-            <&gpio0 23 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
-            <&gpio1 15 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
-            <&gpio0 31 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
-            <&gpio1 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+        input-gpios = <
+            &gpio0 9  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
+            &gpio0 11 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
+            &gpio0 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
+            &gpio1 13 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
+            &gpio0 30 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
+            &gpio0 41 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
+            &gpio1 11 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
+            &gpio1 45 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
+            &gpio1 40 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
+            &gpio0 12 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
+            &gpio1 8  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
+            &gpio0 19 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
+            &gpio0 3  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
+            &gpio1 3  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
+            &gpio1 9  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
+            &gpio0 17 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
+            &gpio0 5  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
+            &gpio1 1  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
+            &gpio1 0  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
+            &gpio0 21 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
+            &gpio1 5  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
+            &gpio1 6  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
+            &gpio0 22 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
+            &gpio0 23 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
+            &gpio1 15 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
+            &gpio0 31 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
+            &gpio1 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
+        >;
     };
 
     encoder: encoder {
@@ -62,66 +62,7 @@
         triggers-per-rotation = <12>;
     };
 
-    /* ===== Батарея на топ-уровне ===== */
     battery: battery {
         compatible = "zmk,battery";
-        adc-channel = <NRF_SAADC_INPUT_A0>;
-        vref-mv = <3000>;
-        full-mv = <4200>;
-        critical-mv = <3300>;
-        scale = <290>; /* VDIV 0.29 */
-    };
-};
 
-&pro_micro_i2c {
-    status = "okay";
-
-    oled: ssd1306@3c {
-        compatible = "solomon,ssd1306fb";
-        reg = <0x3c>;
-        width = <128>;
-        height = <32>;
-        segment-offset = <0>;
-        page-offset = <0>;
-        display-offset = <0>;
-        multiplex-ratio = <31>;
-        com-invdir;
-        segment-remap;
-        com-sequential;
-        prechargep = <0x22>;
-    };
-};
-
-&pinctrl {
-    spi3_default: spi3_default {
-        group1 {
-            psels = <NRF_PSEL(SPIM_MOSI, 0, 27)>;
-        };
-    };
-
-    spi3_sleep: spi3_sleep {
-        group1 {
-            psels = <NRF_PSEL(SPIM_MOSI, 0, 27)>;
-            low-power-enable;
-        };
-    };
-};
-
-&spi3 {
-    compatible = "nordic,nrf-spim";
-    pinctrl-0 = <&spi3_default>;
-    pinctrl-1 = <&spi3_sleep>;
-    pinctrl-names = "default", "sleep";
-    status = "okay";
-
-    led_strip: ws2812@0 {
-        compatible = "worldsemi,ws2812-spi";
-        reg = <0>;
-        spi-max-frequency = <4000000>;
-        chain-length = <12>;
-        spi-one-frame = <0x70>;
-        spi-zero-frame = <0x40>;
-        color-mapping = <LED_COLOR_ID_GREEN LED_COLOR_ID_RED LED_COLOR_ID_BLUE>;
-    };
-};
 
