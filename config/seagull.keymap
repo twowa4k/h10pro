@@ -112,7 +112,7 @@
 
                        &kp S
 &kp N5      &kp LALT              &kp ESC   &kp N6
-                       &kp LALT
+                       &kp L
 
 &none                  &none                &none
             >;
@@ -141,7 +141,7 @@
 &sz0                                             &mo 4
            &kp LS(D)          &kp LC(D)
 &kp N7                                           &kp LGUI
-&kp LALT                                         &kp V
+&kp LS(A)                                        &kp V
 
            &ry90
 &rz90      &kp KP_DIVIDE      &rx90
@@ -167,7 +167,7 @@
 &sz0                                               &mo 4
                  &kp LS(L)        &kp LS(R)
 &kp KP_DIVIDE                                      &kp LALT
-&kp LALT                                           &kp KP_N3
+&kp LA(A)                                          &kp KP_N3
 
                  &kp KP_NUMBER_7
 &kp KP_NUMBER_1  &kp KP_DOT       &kp KP_NUMBER_9
@@ -193,7 +193,7 @@
 &sz0                                               &mo 4
                  &kp LS(L)        &kp LS(R)
 &kp KP_DIVIDE                                      &kp LALT
-&kp LALT                                           &kp KP_N3
+&kp LC(A)                                          &kp KP_N3
 
                  &kp KP_NUMBER_7
 &kp KP_NUMBER_1  &kp KP_DOT       &kp KP_NUMBER_9
