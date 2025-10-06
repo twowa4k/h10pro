@@ -101,7 +101,7 @@
                                   &kp LALT
 
 &kp Y                             &mo 3
-&kp Z                             &mo 4
+&tog 4                            &mo 4
             &kp LC(C)  &kp LC(V)
 &kp LG(N1)                        &kp LALT
 &kp W                             &kp N4
