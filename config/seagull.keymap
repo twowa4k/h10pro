@@ -101,7 +101,7 @@
                                   &kp LALT
 
 &kp Y                             &mo 3
-&tog 4                            &mo 4
+&tog 5                            &mo 4
             &kp LC(C)  &kp LC(V)
 &kp LG(N1)                        &kp LALT
 &kp W                             &kp N4
@@ -233,6 +233,29 @@
             >;
 
             sensor-bindings = <&inc_dec_kp LC(Y) LC(Z)>;
+        };
+
+        layer_5 {
+            bindings = <
+                &trans  &trans
+                        &trans
+
+&trans                  &trans
+&trans                  &trans
+        &trans  &trans
+&trans                  &trans
+&trans                  &trans
+
+        &trans
+&trans  &trans  &trans
+        &trans
+
+                &trans
+&kp V   &trans          &trans  &kp W
+                &trans
+
+&trans          &trans          &trans
+            >;
         };
     };
 };
