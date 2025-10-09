@@ -100,7 +100,7 @@
                        &mo 2      &mo 1
                                   &kp LALT
 
-&to 2                             &mo 3
+&none                             &mo 3
 &none                             &mo 4
             &kp LC(C)  &kp LC(V)
 &kp LG(N1)                        &kp LALT
@@ -137,7 +137,7 @@
                           &mo 2              &mo 1
                                              &kp LALT
 
-&sy0                                         &mo 3
+&kp ENTER                                    &mo 3
 &kp RET                                      &mo 4
            &kp LS(D)      &kp LC(D)
 &kp N7                                       &kp LGUI
@@ -163,7 +163,7 @@
                                   &mo 2            &mo 1
                                                    &kp LALT
 
-&sy0                                               &mo 3
+&kp B                                              &mo 3
 &kp LG(G)                                          &mo 4
                  &kp LS(L)        &kp LS(R)
 &kp KP_DIVIDE                                      &kp LALT
@@ -189,7 +189,7 @@
                                   &mo 2            &mo 1
                                                    &kp LALT
 
-&sy0                                               &mo 3
+&kp C                                              &mo 3
 &kp LS(LA(W))                                      &mo 4
                  &kp LS(L)        &kp LS(R)
 &kp KP_DIVIDE                                      &kp LALT
