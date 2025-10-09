@@ -101,7 +101,7 @@
                                   &kp LALT
 
 &to 2                             &mo 3
-&tog 5                            &mo 4
+&none                             &mo 4
             &kp LC(C)  &kp LC(V)
 &kp LG(N1)                        &kp LALT
 &kp W                             &kp N4
@@ -138,7 +138,7 @@
                                              &kp LALT
 
 &sy0                                         &mo 3
-&sz0                                         &mo 4
+&kp RET                                      &mo 4
            &kp LS(D)      &kp LC(D)
 &kp N7                                       &kp LGUI
 &kp LS(A)                                    &kp V
@@ -164,7 +164,7 @@
                                                    &kp LALT
 
 &sy0                                               &mo 3
-&sz0                                               &mo 4
+&kp LG(G)                                          &mo 4
                  &kp LS(L)        &kp LS(R)
 &kp KP_DIVIDE                                      &kp LALT
 &kp LA(A)                                          &kp KP_N3
@@ -190,7 +190,7 @@
                                                    &kp LALT
 
 &sy0                                               &mo 3
-&sz0                                               &mo 4
+&kp LS(LA(W))                                      &mo 4
                  &kp LS(L)        &kp LS(R)
 &kp KP_DIVIDE                                      &kp LALT
 &kp LC(A)                                          &kp KP_N3
