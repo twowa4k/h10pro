@@ -163,7 +163,7 @@
                                   &mo 2            &mo 1
                                                    &kp LALT
 
-&kp B                                              &mo 3
+&kp LG(G)                                          &mo 3
 &kp LG(G)                                          &mo 4
                  &kp LS(L)        &kp LS(R)
 &kp KP_DIVIDE                                      &kp LALT
@@ -189,8 +189,8 @@
                                   &mo 2            &mo 1
                                                    &kp LALT
 
-&kp C                                              &mo 3
-&kp LS(LA(W))                                      &mo 4
+&none                                              &mo 3
+&none                                              &mo 4
                  &kp LS(L)        &kp LS(R)
 &kp KP_DIVIDE                                      &kp LALT
 &kp LC(A)                                          &kp KP_N3
@@ -215,8 +215,8 @@
                           &mo 2      &mo 1
                                      &kp LALT
 
-&kp Y                                &mo 3
-&kp Z                                &mo 4
+&none                                &mo 3
+&none                                &mo 4
             &kp LC(C)     &kp LC(V)
 &kp LG(N1)                           &kp LALT
 &kp W                                &kp N4
