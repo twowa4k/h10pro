@@ -111,7 +111,7 @@
             &kp DOWN
 
                        &kp S
-&kp N5      &none                 &none     &kp N6
+&kp LA(L)   &none                 &none     &kp LA(R)
                        &kp L
 
 &none                  &none                &none
@@ -174,7 +174,7 @@
                  &kp KP_NUMBER_3
 
                                   &kp LS(LC(T))
-&kp N4           &none                             &none      &kp N7
+&kp LS(LC(L))    &none                             &none      &kp LS(LC(R))
                                   &kp LS(LC(B))
 
 &kp LS(L)                         &kp N7                      &kp LS(R)
@@ -200,10 +200,10 @@
                  &kp KP_NUMBER_3
 
                                   &kp LS(LC(T))
-&kp N5           &none                             &none      &kp N8
+&kp LS(LA(L))    &kp LS(LA(R))                     &kp LS(LA(R))  &kp LS(LA(R))
                                   &kp LS(LC(B))
 
-&kp LS(LC(L))                     &kp PG_DN                   &kp LS(LC(R))
+&kp LS(LC(L))                     &kp PG_DN                       &kp LS(LC(R))
             >;
 
             sensor-bindings = <&inc_dec_kp LC(TAB) LC(LS(TAB))>;
